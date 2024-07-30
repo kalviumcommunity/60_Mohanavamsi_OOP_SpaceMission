@@ -13,7 +13,6 @@ public class main {
         spaceShip.displayInfo();
         System.out.println("Astronut Detials:");
         astronut.displayInfo();
-        
         scanner.close();
     }
 }
