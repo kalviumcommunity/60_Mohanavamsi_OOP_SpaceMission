@@ -10,9 +10,19 @@ public class SpaceShip {
         this.fuelLevel = fuelLevel;
         this.payloadCapacity = payloadCapacity;
     }
-    public void  get(){
-        System.out.println(this.name);
-        System.err.println(this.fuelLevel);
-        System.out.println(this.mission);
+    public String  getName(){
+        return this.name;
+    };
+     public double  getFuel(){
+        return this.fuelLevel;
+    };
+    public String  getMisson(){
+        return this.mission;
+    };
+    public void displayInfo(){
+        System.out.println("Misson: " +  this.mission + "\n"+
+                            "SpaceShip Name: " + this.name+"\n"+
+                            "payloadCapacity: "+this.payloadCapacity+"\n"+
+                           "Fuel Level: " +  this.fuelLevel + "%" +"\n");
     }
 }
