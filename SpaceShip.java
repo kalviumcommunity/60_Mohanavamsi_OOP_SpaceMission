@@ -5,7 +5,6 @@ class SpaceShip {
     private double payloadCapacity;
     private SpaceEnv environment; 
 
-    // Constructor
     public SpaceShip(String name, String mission, double fuelLevel, double payloadCapacity, SpaceEnv environment) {
         this.name = name;
         this.mission = mission;

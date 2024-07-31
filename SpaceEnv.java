@@ -11,10 +11,10 @@ class SpaceEnv {
     }
 
     public void displayInfo() {
-        System.out.println("Planet: " + planet +
-                           ", Temperature: " + temperature + "°C" +
-                           ", Gravity: " + gravity + " m/s^2" +
-                           ", Radiation Level: " + radiationLevel + " Sv/h");
+        System.out.println("Planet: " + planet +"\n"+
+                           "Temperature: " + temperature + "°C" +"\n"+
+                           "Gravity: " + gravity + " m/s^2" +"\n"+
+                           "Radiation Level: " + radiationLevel + " Sv/h");
     }
 
     public String getPlanet() {

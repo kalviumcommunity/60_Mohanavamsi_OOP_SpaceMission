@@ -6,7 +6,7 @@ class Astronut {
     private SpaceShip assignedSpaceShip; 
     private String mission;
 
-    public Astronut(String name, String role, double oxygenLevel, int Healthy, SpaceShip assignedSpaceShip,String misson) {
+    public Astronut(String name, String role, double oxygenLevel, int Healthy, SpaceShip assignedSpaceShip,String mission) {
         this.name = name;
         this.role = role;
         this.oxygenLevel = oxygenLevel;
@@ -21,7 +21,7 @@ class Astronut {
                            "Oxygen Level: " +  this.oxygenLevel + "%" +"\n"+
                            "Health Status: " + ( this.isHealthy ? "Healthy" : "Unhealthy") +"\n"+
                            "In_Mission: " +this.mission+"\n"+
-                           "Assigned SpaceShip: " + ( this.assignedSpaceShip != null ? assignedSpaceShip.getName() : "None")+
+                           "Assigned SpaceShip: " + ( this.assignedSpaceShip != null ? assignedSpaceShip.getName() : "None")+"\n"+
                            "Operating Environment: " + assignedSpaceShip.getEnvironment().getPlanet());
 
     }
