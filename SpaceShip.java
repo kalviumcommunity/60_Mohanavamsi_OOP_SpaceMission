@@ -1,28 +1,32 @@
-public class SpaceShip {
+class SpaceShip {
     private String name;
     private String mission;
     private double fuelLevel;
     private double payloadCapacity;
+    private SpaceEnv environment; 
 
-    public SpaceShip(String name, String mission, double fuelLevel, double payloadCapacity) {
+    // Constructor
+    public SpaceShip(String name, String mission, double fuelLevel, double payloadCapacity, SpaceEnv environment) {
         this.name = name;
         this.mission = mission;
         this.fuelLevel = fuelLevel;
         this.payloadCapacity = payloadCapacity;
+        this.environment = environment;
     }
-    public String  getName(){
-        return this.name;
-    };
-     public double  getFuel(){
-        return this.fuelLevel;
-    };
-    public String  getMisson(){
-        return this.mission;
-    };
-    public void displayInfo(){
-        System.out.println("Misson: " +  this.mission + "\n"+
-                            "SpaceShip Name: " + this.name+"\n"+
-                            "payloadCapacity: "+this.payloadCapacity+"\n"+
-                           "Fuel Level: " +  this.fuelLevel + "%" +"\n");
+
+    public void displayInfo() {
+        System.out.println("SpaceShip Name: " + name +
+                           ", Mission: " + mission +
+                           ", Fuel Level: " + fuelLevel +
+                           ", Payload Capacity: " + payloadCapacity +
+                           ", Operating Environment: " + environment.getPlanet());
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public SpaceEnv getEnvironment() {
+        return environment;
     }
 }
