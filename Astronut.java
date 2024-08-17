@@ -5,6 +5,8 @@ class Astronut {
     private boolean isHealthy; 
     private SpaceShip assignedSpaceShip; 
     private String mission;
+    private static int count;
+
 
     public Astronut(String name, String role, double oxygenLevel, int Healthy, SpaceShip assignedSpaceShip,String mission) {
         this.name = name;
@@ -13,6 +15,11 @@ class Astronut {
         this.isHealthy=Healthy>=60;
         this.mission=mission;
         this.assignedSpaceShip = assignedSpaceShip;
+        this.count++;
+
+    }
+
+    public Astronut() {
     }
 
     public void displayInfo() {
@@ -25,4 +32,7 @@ class Astronut {
                            "Operating Environment: " + assignedSpaceShip.getEnvironment().getPlanet());
 
     }
+    public static  int getCount(){
+        return count;
+    } 
 }

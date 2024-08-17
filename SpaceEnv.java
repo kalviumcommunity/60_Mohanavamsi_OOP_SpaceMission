@@ -2,12 +2,18 @@ class SpaceEnv {
     private String planet;
     private double temperature; 
     private double gravity; 
-    private double radiationLevel; 
+    private double radiationLevel;
+    private static int count;
     public SpaceEnv(String planet, double temperature, double gravity, double radiationLevel) {
         this.planet = planet;
         this.temperature = temperature;
         this.gravity = gravity;
         this.radiationLevel = radiationLevel;
+        this.count++;
+    }
+
+    public SpaceEnv() {
+        
     }
 
     public void displayInfo() {
@@ -20,5 +26,8 @@ class SpaceEnv {
     public String getPlanet() {
         return planet;
     }
+    public static  int getCount(){
+        return count;
+    } 
 }
 

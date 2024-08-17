@@ -7,6 +7,9 @@ public class main {
         System.out.println("Enter the number of missions:");
         int n = scanner.nextInt();
         scanner.nextLine(); 
+        SpaceEnv t_spaceEnv = new SpaceEnv();
+        SpaceShip t_spaceShips=new  SpaceShip();
+        Astronut t_astronuts=new  Astronut();
 
         for (int i = 0; i < n; i++) {
             System.out.println("Enter details for Mission " + (i + 1) + ":");
@@ -78,6 +81,9 @@ public class main {
             }
         }
 
+        System.out.println("Ships used :"+t_spaceShips.getCount());
+        System.out.println("Astronuts used :"+t_astronuts.getCount());
+        System.out.println("envermonmets in this used :"+t_spaceEnv.getCount());
 
         scanner.close();
     }
