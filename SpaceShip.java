@@ -4,22 +4,25 @@ class SpaceShip {
     private double fuelLevel;
     private double payloadCapacity;
     private SpaceEnv environment; 
-
-    // Constructor
+    private static int count;
     public SpaceShip(String name, String mission, double fuelLevel, double payloadCapacity, SpaceEnv environment) {
         this.name = name;
         this.mission = mission;
         this.fuelLevel = fuelLevel;
         this.payloadCapacity = payloadCapacity;
         this.environment = environment;
+        this.count++;
+    }
+
+    public SpaceShip() {
     }
 
     public void displayInfo() {
-        System.out.println("SpaceShip Name: " + name +
-                           ", Mission: " + mission +
-                           ", Fuel Level: " + fuelLevel +
-                           ", Payload Capacity: " + payloadCapacity +
-                           ", Operating Environment: " + environment.getPlanet());
+        System.out.println("SpaceShip Name: " + name +"\n"+
+                           " Mission: " + mission +"\n"+
+                           "Fuel Level: " + fuelLevel +"\n"+
+                           "Payload Capacity: " + payloadCapacity +"\n"+
+                           "Operating Environment: " + environment.getPlanet());
     }
 
     public String getName() {
@@ -29,4 +32,7 @@ class SpaceShip {
     public SpaceEnv getEnvironment() {
         return environment;
     }
+    public static  int getCount(){
+        return count;
+    } 
 }
