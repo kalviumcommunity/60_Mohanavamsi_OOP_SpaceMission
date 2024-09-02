@@ -65,15 +65,19 @@ public class main {
 
                     astronauts[k] = new Astronut(astroName, role, oxygenLevel, health, spaceShips[j], mission);
                 }
-
+                System.out.println();
                 for (int k = 0; k < numAstronauts; k++) {
                     System.out.println("Astronaut " + (k + 1) + " Details:");
                     astronauts[k].displayInfo();
+                    System.out.println();
                 }
+                System.out.println();
             }
-
+            System.out.println();
             System.out.println("Environment Analysis:");
             spaceEnv.displayInfo();
+            System.out.println();
+
 
             for (int j = 0; j < ships; j++) {
                 System.out.println("Space Ship " + (j + 1) + " Info:");

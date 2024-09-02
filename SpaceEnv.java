@@ -1,9 +1,9 @@
 class SpaceEnv {
-    private String planet;
-    private double temperature; 
-    private double gravity; 
-    private double radiationLevel;
-    private static int count;
+     String planet;
+     double temperature; 
+     double gravity; 
+     double radiationLevel;
+     static int count;
     public SpaceEnv(String planet, double temperature, double gravity, double radiationLevel) {
         this.planet = planet;
         this.temperature = temperature;

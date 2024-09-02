@@ -1,11 +1,11 @@
 class Astronut {
-    private String name;
-    private String role;
-    private double oxygenLevel; 
-    private boolean isHealthy; 
-    private SpaceShip assignedSpaceShip; 
-    private String mission;
-    private static int count;
+     String name;
+     String role;
+     double oxygenLevel; 
+     boolean isHealthy; 
+     SpaceShip assignedSpaceShip; 
+     String mission;
+     static int count;
 
 
     public Astronut(String name, String role, double oxygenLevel, int Healthy, SpaceShip assignedSpaceShip,String mission) {
