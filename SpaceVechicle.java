@@ -1,8 +1,8 @@
 abstract class SpaceVehicle {
-    private String name;
-    private String mission;
-    private double fuelLevel;
-    private double payloadCapacity;
+    protected String name;
+    protected String mission;
+    protected double fuelLevel;
+    protected double payloadCapacity;
 
     public SpaceVehicle(String name, String mission, double fuelLevel, double payloadCapacity) {
         this.name = name;
