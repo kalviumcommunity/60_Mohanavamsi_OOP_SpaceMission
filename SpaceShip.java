@@ -7,6 +7,9 @@ class SpaceShip extends SpaceVehicle {
         this.environment = environment;
         count++;
     }
+    public SpaceShip() {
+        count++;
+    }
 
     @Override
     public void displayInfo() {
