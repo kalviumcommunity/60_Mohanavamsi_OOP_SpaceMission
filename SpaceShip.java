@@ -16,6 +16,9 @@ class SpaceShip {
 
     public SpaceShip() {
     }
+    public SpaceShip() {
+        count++;
+    }
 
     public void displayInfo() {
         System.out.println("SpaceShip Name: " + name +"\n"+
