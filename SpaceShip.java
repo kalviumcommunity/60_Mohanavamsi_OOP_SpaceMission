@@ -3,6 +3,10 @@ public class SpaceShip extends SpaceVehicle {
 
     public SpaceShip(String name, String mission, double fuelLevel, double payloadCapacity, SpaceEnv environment) {
         super(name, mission, fuelLevel, payloadCapacity);
+        this.name = name;
+        this.mission = mission;
+        this.fuelLevel = fuelLevel;
+        this.payloadCapacity = payloadCapacity;
         this.environment = environment;
     }
 
