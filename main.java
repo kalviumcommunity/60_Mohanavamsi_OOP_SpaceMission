@@ -38,7 +38,7 @@ public class main {
                     scanner.nextLine();
                     
                     spaceShips[j] = new SpaceShip(name, mission, fuelLevel, payloadCapacity, spaceEnv);
-                    
+                    spaceShips[j].displayInfo();
                     System.out.print("Number of Astronauts: ");
                     int numAstronauts = scanner.nextInt();
                     scanner.nextLine();
@@ -68,7 +68,6 @@ public class main {
             System.out.println("Total Ships: " + SpaceVehicle.getCount());
             System.out.println("Total Astronauts: " + Astronaut.getCount());
             System.out.println("Total Environments: " + SpaceEnv.getCount());
-            scanner.close();
         }
     }
 }

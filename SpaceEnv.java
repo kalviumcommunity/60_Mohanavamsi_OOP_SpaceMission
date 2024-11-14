@@ -13,10 +13,6 @@ public class SpaceEnv {
         count++;
     }
 
-    public SpaceEnv() {
-        count++;
-    }
-
     public String getPlanet() {
         return planet;
     }
@@ -38,6 +34,9 @@ public class SpaceEnv {
     }
 
     public void displayInfo() {
-        System.out.println("Planet: " + planet + "\nTemperature: " + temperature + "°C\nGravity: " + gravity + " m/s²\nRadiation Level: " + radiationLevel + " Sv/h");
+        System.out.println("Planet: " + planet +
+                "\nTemperature: " + temperature + "°C" +
+                "\nGravity: " + gravity + " m/s²" +
+                "\nRadiation Level: " + radiationLevel + " Sv/h");
     }
 }
