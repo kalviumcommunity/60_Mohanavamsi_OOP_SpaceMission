@@ -7,13 +7,13 @@ public class Astronaut {
     private String mission;
     private static int count = 0;
 
-    public Astronaut(String name, String role, double oxygenLevel, int health, SpaceShip assignedSpaceShip, String mission) {
+    public Astronaut(String name, String role, double oxygenLevel, int health, SpaceVehicle assignedSpaceShip2, String mission) {
         this.name = name;
         this.role = role;
         this.oxygenLevel = oxygenLevel;
         this.isHealthy = health >= 60;
         this.mission = mission;
-        this.assignedSpaceShip = assignedSpaceShip;
+        this.assignedSpaceShip = assignedSpaceShip2;
         count++;
     }
 
@@ -29,17 +29,4 @@ public class Astronaut {
                 "\nMission: " + mission);
     }
 }
-public interface Pilot {
-    void navigate(SpaceVehicle vehicle);
-}
 
-public class PilotAstronaut extends Astronaut implements Pilot {
-    public PilotAstronaut(String name, String role, double oxygenLevel, int health, SpaceShip assignedSpaceShip, String mission) {
-        super(name, role, oxygenLevel, health, assignedSpaceShip, mission);
-    }
-
-    @Override
-    public void navigate(SpaceVehicle vehicle) {
-        System.out.println(name + " is navigating the " + vehicle.getName());
-    }
-}

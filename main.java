@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Enter the number of missions:");
@@ -14,7 +14,6 @@ public class Main {
                 int ships = scanner.nextInt();
                 scanner.nextLine();
                 
-                // Create environment for the mission
                 SpaceEnv spaceEnv = createEnvironment(scanner);
                 
                 SpaceShip[] spaceShips = new SpaceShip[ships];
