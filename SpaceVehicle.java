@@ -1,4 +1,4 @@
- public abstract class SpaceVehicle {
+public abstract class SpaceVehicle {
     protected String name;
     protected String mission;
     protected double fuelLevel;

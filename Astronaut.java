@@ -1,11 +1,11 @@
 public class Astronaut {
-    private  String name;
-    private  String role;
-    private  double oxygenLevel;
-    private  boolean isHealthy;
-    private  SpaceShip assignedSpaceShip;
-    private  String mission;
-    private  static int count = 0;
+    private String name;
+    private String role;
+    private double oxygenLevel;
+    private boolean isHealthy;
+    private SpaceShip assignedSpaceShip;
+    private String mission;
+    private static int count = 0;
 
     public Astronaut(String name, String role, double oxygenLevel, int health, SpaceShip assignedSpaceShip, String mission) {
         this.name = name;
@@ -22,6 +22,10 @@ public class Astronaut {
     }
 
     public void displayInfo() {
-        System.out.println("Astronaut Name: " + name + "\nRole: " + role + "\nOxygen Level: " + oxygenLevel + "%\nHealth Status: " + (isHealthy ? "Healthy" : "Unhealthy") + "\nMission: " + mission);
+        System.out.println("Astronaut Name: " + name +
+                "\nRole: " + role +
+                "\nOxygen Level: " + oxygenLevel + "%" +
+                "\nHealth Status: " + (isHealthy ? "Healthy" : "Unhealthy") +
+                "\nMission: " + mission);
     }
 }
